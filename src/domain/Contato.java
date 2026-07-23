@@ -1,13 +1,16 @@
-Public class Contato {
+package domain;
 
-    private String id;
+public class Contato {
+
+    // Atributos da entidade
+    private int id;
     private String nome;
     private String telefone;
     private String email;
 
-    // Constructor
+    // Construtor
     public Contato(
-            String id,
+            int id,
             String nome,
             String telefone,
             String email
@@ -19,34 +22,35 @@ Public class Contato {
     }
 
     // Getters and Setters
-    public String getId() {
+
+    // Atributo id
+    public int getId() {
         return id;
     }
-
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
+    // Atributo nome
     public String getNome() {
         return nome;
     }
-
     public void setNome(String nome) {
         this.nome = nome;
     }
 
+    // Atributo telefone
     public String getTelefone() {
         return telefone;
     }
-
     public void setTelefone(String telefone) {
         this.telefone = telefone;
     }
 
+    // Atributo email
     public String getEmail() {
         return email;
     }
-
     public void setEmail(String email) {
         this.email = email;
     }
